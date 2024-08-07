@@ -8,8 +8,8 @@ def main(message):
     bot.send_message(message.chat.id,
                      text= 'Привет! Добро пожаловать в наше котокафе "Мур"! Выбери чем ты хочешь заняться?', parse_mode = 'Markdown')
 
-    @bot.message_handler(commands=["pet_cat"])
-    def main(message):
+@bot.message_handler(commands=["pet_cat"])
+def main(message):
         bot.send_message(message.chat.id, text= "Котику очень нравится когда его гладят ❤️", parse_mode = 'Markdown')
 
 @bot.message_handler(commands=["feed_cat"])
@@ -26,4 +26,5 @@ def main(message):
 def main(message):
         bot.send_message(message.chat.id, text= "Как же в котокафе и без чая с печеньками? 🍪", parse_mode = 'Markdown')
 
-        bot.infinity_polling()
+
+bot.infinity_polling()
