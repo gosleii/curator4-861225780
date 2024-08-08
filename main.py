@@ -20,7 +20,7 @@ def main(message):
 @bot.message_handler(commands=["play_cat"])
 def main(message):
         bot.send_message(message.chat.id, text= " *Играть!!*\n"  
-        "Это что - мышка? Надо срочно [поймать] (https://pin.it/1AFqM0IP4)!", parse_mode = 'Markdown')
+        "Это что - мышка? Надо срочно [поймать](https://pin.it/1AFqM0IP4)!", parse_mode = 'Markdown')
 
 @bot.message_handler(commands=["tea_with_cookies"])
 def main(message):
